@@ -1,8 +1,24 @@
 package Persones;
 
 public class Farmer extends Character{
-    protected int food;
-    public Farmer(String name, int health, int attack, int speed, int endurance, int weapon) {
-        super(name, health, attack, speed, endurance, weapon);
+    String name;
+    public Farmer(float hp, int maxHp, int damage, int attack, int def, String name) {
+        super(hp, maxHp, damage, attack, def);
+        this.name = name;
+    }
+
+    public Farmer(String name) {
+        super(1,1,1,1,1);
+        this.name = name;
+    }
+
+    @Override
+    public void step() {
+
+    }
+
+    @Override
+    public String getInfo() {
+        return "Я Крестьянин!";
     }
 }

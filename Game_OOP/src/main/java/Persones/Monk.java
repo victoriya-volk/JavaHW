@@ -1,9 +1,23 @@
 package Persones;
 
-public class Monk extends Character {
-    protected int mana;
+public class Monk extends Magician{
+    public Monk(float hp, int maxHp, int damage, int attack, int def, int mana) {
+        super(hp, maxHp, damage, attack, def, mana);
+    }
 
-    public Monk(String name, int health, int attack, int speed, int endurance, int weapon) {
-        super(name, health, attack, speed, endurance, weapon);
+    public Monk(String name) {
+        super(1, 1, 1,1,1,1);
+        super.name = name;
+    }
+
+
+    @Override
+    public void step() {
+
+    }
+
+    @Override
+    public String getInfo() {
+        return "Я Монах!";
     }
 }

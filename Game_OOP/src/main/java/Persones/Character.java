@@ -1,30 +1,34 @@
 package Persones;
 
-public class Character {
-    protected String name;
-    protected int health;
-    protected int attack;
-    protected int speed;
-    protected int endurance;
-    protected int weapon;
+import GameInterface.GameInterface;
 
-    public Character(String name, int health, int attack, int speed, int endurance, int weapon) {
-        this.name = name;
-        this.health = health;
+public abstract class Character implements GameInterface {
+    private static int characterCnt;
+    public static int getCharacterCnt() {return characterCnt; }
+    public void setHp(float hp) {if (hp >= 0) this.hp = hp;}
+    public float getHp() {return  hp;}
+     private float hp;
+    int damage, attack, def, maxHp;
+
+//    public int getDef(){return def;};
+
+
+    public Character(float hp, int maxHp, int damage, int attack, int def) {
+        this.hp = hp;
+        this.damage = damage;
         this.attack = attack;
-        this.speed = speed;
-        this.endurance = endurance;
-        this.weapon = weapon;
+        this.def = def;
+        this.maxHp = maxHp;
+        characterCnt++;
     }
 
-    public int getHealth() {
-        return 0;
-    }
-    public int getSpeed() {
-        return 0;
-    }
-    public int getAttack(){
-        return 0;
+    @Override
+    public void step() {
+
     }
 
+    @Override
+    public String getInfo() {
+        return "Я персонаж!";
+    }
 }

@@ -1,9 +1,19 @@
 package Persones;
 
-public class Sniper extends Character {
-    protected int ammunition;
-    protected boolean masking;
-    public Sniper(String name, int health, int attack, int speed, int endurance, int weapon) {
-        super(name, health, attack, speed, endurance, weapon);
+public class Sniper extends Archer{
+
+    public Sniper(String name) {
+        super(150, 150, 12, 5, 3, 22, 22, 3);
+        super.name = name;
+    }
+
+    @Override
+    public String getInfo() {
+        return "Я снайпер!";
+    }
+
+    @Override
+    public void step() {
+
     }
 }

@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13c6e26f-fb30-4a98-a1d2-b1dc452bb3bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Game_OOP/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_OOP/src/main/java/Persones/Crossbowman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_OOP/src/main/java/Persones/Magician.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_OOP/src/main/java/Persones/Robber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_OOP/src/main/java/Persones/Spearman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game_OOP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Game_OOP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
