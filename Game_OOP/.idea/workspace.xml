@@ -5,25 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f5eb90b-820d-4b4d-885b-f839c08206c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameInterface/GameInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persones/Archer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persones/Magician.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persones/Names.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persones/Robber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persones/Sorcerer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persones/Spearman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persones/Warriors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persones/XBowMan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Archer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Farmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Magician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Magician.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Monk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Robber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Robber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Sniper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StartGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Sorcerer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Sorcerer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Spearman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Warriors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Warriors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/XBowMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/XBowMan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
