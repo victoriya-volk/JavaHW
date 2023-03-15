@@ -1,5 +1,5 @@
 package Persones;
 
 public enum Names {
-    Harry, Ronald, Hermione, Draco, Cedric, Dumbledore, Severus, Hagrid, Filch, Sirius, Lupin, Frodo, Bilbo, Gandalf
+    Harry, Ronald, Hermione, Draco, Cedric, Dumbledore, Severus, Hagrid, Filch, Sirius, Lupin, Frodo, Bilbo, Gandalf, Thorin, Naruto, Lich, Thrall, Sylvanas
 }

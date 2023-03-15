@@ -4,8 +4,8 @@ public abstract class Magician extends Character{
     String name;
     int mana;
 
-    public Magician(float hp, int maxHp, int damage, int attack, int def, int speed, int mana) {
-        super(hp, maxHp, damage, attack, def, speed);
+    public Magician(float hp, int attack, int def, int maxHp, int speed, int[] damage, int mana) {
+        super(hp, attack, def, maxHp, speed, damage);
         this.mana = mana;
     }
 }

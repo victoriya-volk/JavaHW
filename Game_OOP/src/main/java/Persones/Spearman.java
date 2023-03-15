@@ -1,13 +1,8 @@
 package Persones;
 
 public class Spearman extends Warriors {
-    public Spearman(float hp, int maxHp, int damage, int attack, int def, int speed, String name) {
-        super(hp, maxHp, damage, attack, def, speed);
-        super.name = name;
-    }
-
     public Spearman (String name) {
-        super(1, 1, 1, 1, 1, 1);
+        super(1, 1, 1, 1, 1, new int[]{1, 3});
         super.name = name;
     }
 

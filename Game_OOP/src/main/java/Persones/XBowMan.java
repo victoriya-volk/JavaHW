@@ -1,13 +1,13 @@
 package Persones;
 
 public class XBowMan extends Archer {
-
-    public XBowMan(float hp, int maxHp, int damage, int attack, int def, int shots, int maxShots, float dist, int speed, String name) {
-        super(hp, maxHp, damage, attack, def, shots, maxShots, dist, speed);
+    public XBowMan(float hp, int attack, int def, int maxHp, int speed, int[] damage, int shots, float dist, String name) {
+        super(hp, attack, def, maxHp, speed, damage, shots, dist);
         super.name = name;
     }
+
     public XBowMan(String name) {
-        super(10, 10, 12, 6, 3, 16, 16, 3, 4);
+        super(10, 10, 12, 6, 3, new int[]{2, 3}, 16, 4);
         super.name = name;
     }
 
