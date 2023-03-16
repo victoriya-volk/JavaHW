@@ -4,6 +4,10 @@ import GameInterface.GameInterface;
 
 public abstract class Character implements GameInterface {
 
+    public int getSpeed(){
+        return speed;
+    }
+
     public void setHp(float hp) {if (hp >= 0) this.hp = hp;}
     public float getHp() {return  hp;}
      private float hp;

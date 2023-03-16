@@ -7,7 +7,7 @@ public class XBowMan extends Archer {
     }
 
     public XBowMan(String name) {
-        super(10, 10, 12, 6, 3, new int[]{2, 3}, 16, 4);
+        super(10, 6, 3, 10, 4, new int[]{2, 3}, 16, 4);
         super.name = name;
     }
 

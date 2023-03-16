@@ -3,7 +3,7 @@ package Persones;
 public class Sniper extends Archer{
 
     public Sniper(String name) {
-        super(15, 15, 12, 12, 10, new int[]{8, 10}, 32, 9);
+        super(15, 12, 10, 15, 9, new int[]{8, 10}, 32, 9);
         super.name = name;
     }
 
