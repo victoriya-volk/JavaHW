@@ -10,19 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Character> firstTeam = new ArrayList<>();
-        firstTeam.sort(new Comparator<Character>() {
-            @Override
-            public int compare(Character o1, Character o2) {
-                return o1.getSpeed() - o2.getSpeed();
-            }
-        });
         ArrayList<Character> secondTeam = new ArrayList<>();
-        secondTeam.sort(new Comparator<Character>() {
-            @Override
-            public int compare(Character o1, Character o2) {
-                return o1.getSpeed() - o2.getSpeed();
-            }
-        });
 
         for (int i = 0; i < 10; i++) {
             int bones = new Random().nextInt(1001);
@@ -39,14 +27,14 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             int bones = new Random().nextInt(1001);
             if (bones >= 1 && bones < 251) {
-                secondTeam.add(new Sniper(getName(), 1, i + 1));
+                secondTeam.add(new Sniper(getName(), i + 1, 10));
             } else if (bones >= 251 && bones < 501) {
-                secondTeam.add(new Robber(getName(), 1, i + 1));
+                secondTeam.add(new Robber(getName(), i + 1, 10));
 
             } else if (bones >= 501 && bones < 751) {
-                    secondTeam.add(new Sorcerer(getName(), 1, i + 1));
+                    secondTeam.add(new Sorcerer(getName(), i + 1, 10));
             } else {
-                secondTeam.add(new Farmer(getName(), 1, i + 1));
+                secondTeam.add(new Farmer(getName(), i + 1, 10));
             }
         }
         ArrayList<Character> allCharacters = new ArrayList<>(firstTeam);
@@ -57,12 +45,18 @@ public class Main {
                 return o2.getSpeed() - o1.getSpeed();
             }
         });
+        int steps = 0;
+        do {
+            for (int i = 0; i < allCharacters.size(); i++){
+                if (firstTeam.contains(allCharacters.get(i))) {
+                    allCharacters.get(i).step(firstTeam, secondTeam);
+                } else {
+                    allCharacters.get(i).step(secondTeam, firstTeam);
+                }
+            }
+            steps += 1;
+        } while (steps < allCharacters.size() * 2 );
 
-
-        for (int i = 0; i < allCharacters.size(); i++) {
-            System.out.println(allCharacters.get(i).getInfo() + " " + allCharacters.get(i).getSpeed() +
-                    " " + allCharacters.get(i).getAttack());
-        }
 
     }
 
