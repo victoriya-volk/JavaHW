@@ -1,13 +1,9 @@
 package Persones;
 
-import java.util.ArrayList;
-
 public class Sorcerer extends Magician{
-    public Sorcerer (String name, int posX, int posY) {
-        super(posX, posY,30, 17, 12, 30, 9, new int[]{-5, -5}, 1, 1);
+    public Sorcerer (String name, CoordsPers coords) {
+        super(coords.posX, coords.posY,30, 17, 12, 30, 9, new int[]{-5, -5}, 1, 1);
         super.name = name;
-        super.posX = posX;
-        super.posY = posY;
     }
 
 
@@ -16,13 +12,15 @@ public class Sorcerer extends Magician{
 
     }
 
-    @Override
-    public void step(ArrayList<Character> firstTeam, ArrayList<Character> secondTeam) {
-        System.out.println("Я колдун " + name + ". Я сделал ход!");
-    }
+
 
     @Override
-    public String getInfo() {
-        return "Я Колдун!";
+    public StringBuilder getInfo() {
+        StringBuilder builder = new StringBuilder();
+        return builder.append("Колдун: \t").append(Sorcerer.super.name)
+                .append("\t| ATK:\t").append(Sorcerer.super.attack)
+                .append("\t| HP:\t").append(Sorcerer.super.getHp())
+                .append(" \t| MP:\t").append(Sorcerer.super.mana)
+                .append("\t|").append("\t| (X.Y) : ").append(Sorcerer.super.coords.posX).append(".").append(Sorcerer.super.coords.posY);
     }
 }

@@ -4,11 +4,9 @@ import java.util.ArrayList;
 
 public class Monk extends Magician{
 
-    public Monk(String name, int posX, int posY) {
-        super(posX, posY,30, 12, 7,30,5, new int[]{-4, -4},1, 1);
+    public Monk(String name, CoordsPers coords) {
+        super(coords.posX, coords.posY,30, 12, 7,30,5, new int[]{-4, -4},1, 1);
         super.name = name;
-        super.posX = posX;
-        super.posY = posY;
     }
 
 
@@ -23,7 +21,13 @@ public class Monk extends Magician{
     }
 
     @Override
-    public String getInfo() {
-        return "Я Монах!";
+    public StringBuilder getInfo() {
+
+        StringBuilder builder = new StringBuilder();
+        return builder.append("Монах:  \t").append(Monk.super.name)
+                .append("\t| ATK:\t").append(Monk.super.attack)
+                .append("\t| HP:\t").append(Monk.super.getHp())
+                .append(" \t| MP:\t").append(Monk.super.mana)
+                .append("\t|").append("\t| (X.Y) : ").append(Monk.super.coords.posX).append(".").append(Monk.super.coords.posY);
     }
 }

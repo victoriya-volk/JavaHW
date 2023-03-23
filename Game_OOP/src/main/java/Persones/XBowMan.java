@@ -1,14 +1,10 @@
 package Persones;
 
-import java.util.ArrayList;
-
 public class XBowMan extends Archer {
 
-    public XBowMan(String name, int posX, int posY) {
-        super(posX, posY,10, 6, 3, 6, 4, new int[]{2, 3},0, 16, 4);
+    public XBowMan(String name,CoordsPers coords) {
+        super(coords.posX, coords.posY,10, 6, 3, 6, 4, new int[]{2, 3},0, 16, 4);
         super.name = name;
-        super.posX = posX;
-        super.posY = posY;
     }
 
 
@@ -18,12 +14,13 @@ public class XBowMan extends Archer {
     }
 
     @Override
-    public void step(ArrayList<Character> firstTeam, ArrayList<Character> secondTeam) {
-        System.out.println("Я арбалетчик " + name + ". Я сделал ход!");
-    }
+    public StringBuilder getInfo() {
 
-    @Override
-    public String getInfo() {
-        return "Я Арбалетчик!";
+        StringBuilder builder = new StringBuilder();
+        return builder.append("Арбалет: \t").append(XBowMan.super.name)
+                .append("\t| ATK:\t").append(XBowMan.super.attack)
+                .append("\t| HP:\t").append(XBowMan.super.getHp())
+                .append(" \t| Arrows:").append(XBowMan.super.shots)
+                .append("\t|").append("\t| (X.Y) : ").append(XBowMan.super.coords.posX).append(".").append(XBowMan.super.coords.posY);
     }
 }

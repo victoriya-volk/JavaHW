@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f5eb90b-820d-4b4d-885b-f839c08206c3" name="Changes" comment="HomeWork3 done">
+    <list default="true" id="9f5eb90b-820d-4b4d-885b-f839c08206c3" name="Changes" comment="HomeWork4 all done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnsiColors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GameInterface/GameInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameInterface/GameInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Archer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/CoordsPers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/CoordsPers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Farmer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/GameInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/GameInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Magician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Magician.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Monk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Robber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Robber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Sniper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Sorcerer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Sorcerer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Spearman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persones/Warriors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/Warriors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Persones/XBowMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persones/XBowMan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,12 +79,20 @@
       <option name="project" value="LOCAL" />
       <updated>1679004280884</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="HomeWork4 all done">
+      <created>1679527249311</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679527249311</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="HomeWork3 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="HomeWork3 done" />
+    <MESSAGE value="HomeWork4 all done" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomeWork4 all done" />
   </component>
 </project>

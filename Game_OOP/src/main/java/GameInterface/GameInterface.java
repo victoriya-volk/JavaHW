@@ -9,5 +9,5 @@ public interface GameInterface {
 
     void step(ArrayList<Character> firstTeam, ArrayList<Character> secondTeam);
 
-    String getInfo();
+    StringBuilder getInfo();
 }

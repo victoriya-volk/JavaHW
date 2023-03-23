@@ -1,13 +1,9 @@
 package Persones;
 
-import java.util.ArrayList;
-
 public class Spearman extends Warriors {
-    public Spearman (String name, int posX, int posY) {
-        super(posX, posY, 10, 4, 5, 10, 4, new int[]{1, 3}, 0);
+    public Spearman (String name, CoordsPers coords) {
+        super(coords.posX, coords.posY, 10, 4, 5, 10, 4, new int[]{1, 3}, 0);
         super.name = name;
-        super.posX = posX;
-        super.posY = posY;
     }
 
 
@@ -17,12 +13,12 @@ public class Spearman extends Warriors {
     }
 
     @Override
-    public void step(ArrayList<Character> firstTeam, ArrayList<Character> secondTeam) {
-        System.out.println("Я копейщик " + name + ". Я сделал ход!");
-    }
+    public StringBuilder getInfo() {
 
-    @Override
-    public String getInfo() {
-        return "Я Копейщик!";
+        StringBuilder builder = new StringBuilder();
+        return builder.append("Копейщик:\t").append(Spearman.super.name)
+                .append("\t| ATK:\t").append(Spearman.super.attack)
+                .append("\t| HP:\t").append(Spearman.super.getHp())
+                .append(" \t|\t\t\t|").append("\t| (X.Y) : ").append(Spearman.super.coords.posX).append(".").append(Spearman.super.coords.posY);
     }
 }

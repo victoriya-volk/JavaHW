@@ -3,7 +3,6 @@ package Persones;
 import GameInterface.GameInterface;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public abstract class Character extends CoordsPers implements GameInterface {
 
@@ -22,9 +21,9 @@ public abstract class Character extends CoordsPers implements GameInterface {
     int[] damage = new int[2];
     protected CoordsPers coords;
 
-    public CoordsPers getCoords() {
-        return coords;
-    }
+//    public CoordsPers getCoords() {
+//        return coords;
+//    }
 
     public Character(int posX, int posY, float hp, int attack, int def, int maxHp, int speed, int[] damage, int delivery) {
         coords = new CoordsPers(posX, posY);
@@ -41,6 +40,8 @@ public abstract class Character extends CoordsPers implements GameInterface {
     public void step(ArrayList<Character> firstTeam, ArrayList<Character> secondTeam) {
 
     }
+
+    public int[] getCoords() {return new int[]{coords.posX, coords.posY};}
 
     public int findNearest(ArrayList<Character> team){
         double min = 100;
@@ -65,9 +66,9 @@ public abstract class Character extends CoordsPers implements GameInterface {
     }
 
     @Override
-    public String getInfo() {
+    public StringBuilder getInfo() {
 
-        return "Я персонаж!";
+        return new StringBuilder("");
     }
 
 }
